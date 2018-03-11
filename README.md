@@ -10,5 +10,9 @@ Here are the things that took me hours to figure out:
     * In Simulator menu bar: 
         * debug -> DESELECT slow animations *AND* 
         * debug -> graphic quality override -> SELECT device default
+### Useful Commands in the emulator: 
+* Cmd-D : Summon React native Development Tab ([Link](https://facebook.github.io/react-native/docs/debugging.html)) 
+* Cmd-Shift-H : Home button press
+* Cmd-R : reload your app
         
     
