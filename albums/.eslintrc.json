@@ -21,6 +21,7 @@
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
         "react/no-array-index-key": 1,
         "no-plusplus": 0,
-        "semi": 2
+        "semi": 2,
+        "no-console": 1
     }
 }
