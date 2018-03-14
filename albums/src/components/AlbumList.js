@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { ScrollView } from "react-native";
-import AlbumDetail from "./AlbumDetail";
+import AlbumCard from "./AlbumCard";
 
 class AlbumList extends Component {
   // babel will transpile this into a constructor
@@ -14,7 +14,7 @@ class AlbumList extends Component {
 
   renderAlbums() {
     return this.state.albums.map((album) => (
-      <AlbumDetail key={album.title} album={album} />
+      <AlbumCard key={album.title} album={album} />
     ));
   }
 
