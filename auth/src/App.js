@@ -32,11 +32,21 @@ class App extends Component {
   renderContent() {
     switch (this.state.loggedIn) {
       case true:
-        return <Button>Log Out</Button>;
+        return (
+          <View style={{ flexDirection: "row", padding: 5 }}>
+            <Button handlePress={() => firebase.auth().signOut()}>
+              Log Out
+            </Button>
+          </View>
+        );
       case false:
         return <LoginForm />;
       case null:
-        return <Spinner size="large" />;
+        return (
+          <View style={{ flexDirection: "row", padding: 5 }}>
+            <Spinner size="large" />
+          </View>
+        );
     }
   }
 
@@ -44,7 +54,7 @@ class App extends Component {
     return (
       <View>
         <Header headerText="Authentication" />
-        <View style={{ height: 40 }}>{this.renderContent()}</View>
+        {this.renderContent()}
       </View>
     );
   }

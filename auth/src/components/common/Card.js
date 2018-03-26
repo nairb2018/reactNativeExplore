@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 // this is actually just a reactJS equivalent of a component level css file
-// due to the lack of a css file ...
+// due to the lack of css files ...
 const Card = (props) => {
   return <View style={styles.containerStyle}>{props.children}</View>;
 };
