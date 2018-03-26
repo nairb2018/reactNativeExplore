@@ -1,0 +1,29 @@
+{
+    "parser": "babel-eslint",
+    "plugins": [
+        "react",
+        "import"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings"
+    ],
+    "env": {
+        "browser": true
+    },
+    "rules" : {
+        "no-undef": 1,
+        "no-unused-vars": 1,
+        "comma-dangle": 0, 
+        "react/prop-types": 0,
+        "no-use-before-define": [2, { "functions": false, "classes": true, "variables": false}],
+        "prefer-destructuring": 0,
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "react/no-array-index-key": 1,
+        "no-plusplus": 0,
+        "semi": 2,
+        "no-console": 1
+    }
+}
